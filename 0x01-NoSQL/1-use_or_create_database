@@ -1,0 +1,4 @@
+#!/bin/bash
+// my comment
+echo "use my_db" | mongo
+
