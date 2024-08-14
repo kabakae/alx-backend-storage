@@ -1,3 +1,5 @@
 #!/bin/bash
-// my comment
-echo "show dbs" | mongo
+# This script lists all databases in MongoDB.
+
+# Connect to MongoDB and list all databases without any extra output
+mongo --quiet --eval "db.getMongo().getDBNames().forEach(function(db) { print(db); })"
